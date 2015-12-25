@@ -20,7 +20,7 @@ function run(msg, matches)
   if msg.to.type ~= 'chat' then 
     return
   end
-  if not is_momod(msg) then
+  if not is_sudo(msg) then
     return
   end
   --if not is_admin(msg) then -- For admins only !
