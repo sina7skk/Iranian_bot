@@ -245,112 +245,110 @@ Our channels
 @teleseedch [English]
 ]],
     help_text = [[
-Commands list :
+-برای کیک کردن فرد از گروه از دستور🔽
+[!/]kick (username|id)
+-برای بن کردن فرد از گروه از دستور🔽
+[!/]ban ( username|id)
+-برای آنبن کردن فرد از گروه از دستور🔽
+[!/]unban (id)
+برای هر سه امکان بالا میتوانید از ریپلای هم استفاده کنید
+➖➖➖➖➖➖➖➖➖➖➖➖
+برای دریافت لیست اعضا به صورت مسیج🔽
+[!/]wholist
+برای دریافت لیست اعضا به صورت فایل🔽
+[!/]who
+➖➖➖➖➖➖➖➖➖➖➖➖
+برای دریافت لیست مدیریت گروه🔽
+[!/]modlist
+برای پرومت کردن فرد به ادمینی🔽
+[!/]promote @username
+برای دیموت کردن فرد از ادمینی🔽
+[!/]demote @username
+➖➖➖➖➖➖➖➖➖➖➖➖
+برای خارج شدن از گروه🔽
+[!/]kickme
+➖➖➖➖➖➖➖➖➖➖➖➖
+برای دریافت توضیحات گروه🔽
+[!/]about
+➖➖➖➖➖➖➖➖➖➖➖➖
+برای تنظیم عکس و قفل کردن آن🔽
+[!/]setphoto
+➖➖➖➖➖➖➖➖➖➖➖➖
+برای دریافت قوانین گروه🔽
+[!/]rules
+➖➖➖➖➖➖➖➖➖➖➖➖
+برای دریافت ایدی گروه🔽
+[!/]id
+و برای دریافت ایدی یوزر مسیج فرد را ریپلای و بعد
+[!/]id
+را بفرستید
+➖➖➖➖➖➖➖➖➖➖➖➖
+برای قفل کردن اعضا ، اسم🔽
+[!/]lock (member & name)
+برای بازکردن قفل اعضا، نام ، عکس گروه 🔽
+[!/]unlock (member & name & photo)
+➖➖➖➖➖➖➖➖➖➖➖➖
+برای تنظیم قانون برای گروه🔽
+[!/]set rules {text}
+➖➖➖➖➖➖➖➖➖➖➖➖
+برای تنظیم توضیح برای گروه🔽
+[!/]set about {text}
+➖➖➖➖➖➖➖➖➖➖➖➖
+برای دریافت تنظیمات گروه🔽
+[!/]settings
+➖➖➖➖➖➖➖➖➖➖➖➖
+برای ساخت/تعویض لینک گروه🔽
+[!/]newlink
+برای دریافت لینک گروه🔽
+[!/]link
+➖➖➖➖➖➖➖➖➖➖➖➖
+برای دریافت اونر گروه🔽
+[!/]owner
+➖➖➖➖➖➖➖➖➖➖➖➖
+برای تنظیم اونر گروه🔽
+[!/]setowner [id]
+➖➖➖➖➖➖➖➖➖➖➖➖
+برای تنظیم لیمیت اسپم🔽
+[!/]setflood [value]
+➖➖➖➖➖➖➖➖➖➖➖➖
+برای ذخیره فایلی🔽
+[!/]save [value] <text>
+و برای دریافت آن🔽
+[!/]get [value]
+➖➖➖➖➖➖➖➖➖➖➖➖
+برای پاک کردن قوانین،توضیح و مدیر های گروه و اعضا🔽
+[!/]clean [modlist & rules & about & member]
+➖➖➖➖➖➖➖➖➖➖➖➖
+برای دریافت ایدی یوزر🔽
+[!/]res [username]
+➖➖➖➖➖➖➖➖➖➖➖➖
+برای دریافت لاگ گروه🔽
+[!/]log
+➖➖➖➖➖➖➖➖➖➖➖➖
+برای دریافت لیست بن شدگان🔽
+[!/]banlist
+➖➖➖➖➖➖➖➖➖➖➖➖
+برای دریافت همه اطلاعات درباره گروه🔽
+[!/] all
+[!/] all [group id]
+➖➖➖➖➖➖➖➖➖➖➖➖
+برای تگ کردن همه اعضای گروه🔽
+[!/]tagall [msg]
+➖➖➖➖➖➖➖➖➖➖➖➖
+برای خارج کردن گروه از مدیریت 🔽
+[!/]rem 
 
-!kick [username|id]
-You can also do it by reply
-
-!ban [ username|id]
-You can also do it by reply
-
-!unban [id]
-You can also do it by reply
-
-!who
-Members list
-
-!modlist
-Moderators list
-
-!promote [username]
-Promote someone
-
-!demote [username]
-Demote someone
-
-!kickme
-Will kick user
-
-!about
-Group description
-
-!setphoto
-Set and locks group photo
-
-!setname [name]
-Set group name
-
-!rules
-Group rules
-
-!id
-return group id or user id
-
-!help
-
-!lock [member|name|bots]
-Locks [member|name|bots] 
-
-!unlock [member|name|photo|bots]
-Unlocks [member|name|photo|bots]
-
-!set rules <text>
-Set <text> as rules
-
-!set about <text>
-Set <text> as about
-
-!settings
-Returns group settings
-
-!newlink
-create/revoke your group link
-
-!link
-returns group link
-
-!owner
-returns group owner id
-
-!setowner [id]
-Will set id as owner
-
-!setflood [value]
-Set [value] as flood sensitivity
-
-!stats
-Simple message statistics
-
-!save [value] <text>
-Save <text> as [value]
-
-!get [value]
-Returns text of [value]
-
-!clean [modlist|rules|about]
-Will clear [modlist|rules|about] and set it to nil
-
-!res [username]
-returns user id
-"!res @username"
-
-!log
-will return group logs
-
-!banlist
-will return group ban list
-
-**U can use both "/" and "!" 
-
-
-*Only owner and mods can add bots in group
-
-
-*Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
-
-*Only owner can use res,setowner,promote,demote and log commands
-
-/tagall {msg}
+برای اضافه کردن گروه به مدیریت 🔽
+[!/]add 
+➖➖➖➖➖➖➖➖➖➖➖➖
+برای قفل کردن فارسی و عربی 🔽
+[!/]lock arabic
+➖➖➖➖➖➖➖➖➖➖➖➖
+برای جلوگیری از ورود بات🔽
+[!/]lock bots
+برای اجازه ورود بات به گروه🔽
+[!/]unlock bots
+➖➖➖➖➖➖➖➖➖➖➖➖
 ]]
 
   }
