@@ -218,8 +218,9 @@ function create_config( )
     "broadcast",
     "download_media",
     "invite",
-    "all"
-    },
+    "all",
+   "tagall"
+ },
     sudo_users = {147509695,0,tonumber(our_id)},--Sudo users
     disabled_channels = {},
     realm = {99975000},--Realms Id
