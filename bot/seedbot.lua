@@ -219,6 +219,7 @@ function create_config( )
     "download_media",
     "invite",
     "all",
+    "feedback",
    "tagall"
  },
     sudo_users = {147509695,0,tonumber(our_id)},--Sudo users
@@ -348,6 +349,9 @@ Our channels
 [!/]lock bots
 برای اجازه ورود بات به گروه🔽
 [!/]unlock bots
+➖➖➖➖➖➖➖➖➖➖➖➖
+برای ارسال نظرات 🔽
+!feedback {msg}
 ➖➖➖➖➖➖➖➖➖➖➖➖
 made with ❤ by  @amir_sereen
 ]]
