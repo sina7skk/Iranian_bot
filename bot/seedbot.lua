@@ -351,9 +351,9 @@ Our channels
 [!/]unlock bots
 ➖➖➖➖➖➖➖➖➖➖➖➖
 برای ارسال نظرات 🔽
-!feedback {msg}
+[!/]feedback [msg]
 ➖➖➖➖➖➖➖➖➖➖➖➖
-made with ❤ by  @amir_sereen
+made with ❤ by  ↪@amir_sereen↩
 ]]
 
   }
