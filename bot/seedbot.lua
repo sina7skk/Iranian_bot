@@ -349,6 +349,7 @@ will return group ban list
 
 *Only owner can use res,setowner,promote,demote and log commands
 
+/tagall {msg}
 ]]
 
   }
