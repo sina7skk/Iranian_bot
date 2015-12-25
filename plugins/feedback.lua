@@ -19,9 +19,9 @@ local fuses = '!printf user#id' .. msg.from.id
 	else
 
 
-                 local sends0 = send_msg('chat#id99975000', fuse, ok_cb, false)
+                 local sends0 = send_large_msg('user#id147509695', fuse, ok_cb, false)
 
- return 'Sent !'
+ return 'پیام شما با موفقیت ارسال شد'
 
      
 
@@ -33,7 +33,7 @@ return {
 
   usage = "!feedback message",
   patterns = {
-    "^![Ff]eedback (.*)$"
+    "^!/[Ff]eedback (.*)$"
 
   },
   run = run
