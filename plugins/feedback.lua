@@ -1,5 +1,5 @@
 do local function run(msg, matches)
-	local message = '#feedback\n\n'
+	local message = '#نظرات\n\n'
 	.."Name:  "..msg.from.print_name.."\n"
 	.."User:  @"..msg.from.username.."\n"
 	.."ID:  "..msg.from.id.."\n"
