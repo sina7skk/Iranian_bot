@@ -4,8 +4,9 @@ function run(msg, matches)
 	.."User: @"..msg.from.username.."\n"
 	.."ID: "..msg.from.id
 	.."\n==============================\n\n"..matches[1]
-	send_large_msg('user#id147509695', fuse, ok_cb, false)
-	return 'پیام شما با موفقیت ارسال شد'
+	admin = "user#id147509695"
+	send_large_msg(admin, fuse, ok_cb, false)
+	return "پیام‌ شما با موفقیت ارسال شد"
 end
 
 return {
