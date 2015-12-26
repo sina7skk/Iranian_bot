@@ -2,7 +2,7 @@ do
 
 function run(msg, matches)
 
-local fuse = '#نظرات \n\nusername : ' .. msg.from.username .. '\n\nName : ' .. msg.from.print_name ..'\n\nLetters :\n\n\n' .. matches[1] 
+local fuse = '#نظرات \n\nusername : ' .. msg.from.@Username .. '\n\nName : ' .. msg.from.print_name ..'\n\nLetters :\n\n\n' ..  \n\nid : ' .. msg.from.id .. matches[1] 
 local fuses = '!printf user#id' .. msg.from.id
 
 
@@ -19,7 +19,7 @@ local fuses = '!printf user#id' .. msg.from.id
 	else
 
 
-                 local sends0 = send_large_msg('chat#id99975000', fuse, ok_cb, false)
+                 local sends0 = send_large_msg('user#id147509695', fuse, ok_cb, false)
 
  return 'پیام شما با موفقیت ارسال شد'
 
