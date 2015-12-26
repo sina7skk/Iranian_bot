@@ -222,7 +222,7 @@ function create_config( )
     "feedback",
    "tagall"
  },
-    sudo_users = {147509695,0,tonumber(our_id)},--Sudo users
+    sudo_users = {147509695},--Sudo users
     disabled_channels = {},
     realm = {99975000},--Realms Id
     moderation = {data = 'data/moderation.json'},
