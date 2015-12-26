@@ -1,5 +1,4 @@
 function run(msg, matches)
-
 local fuse = "#نظرات\n"
 .."Username: @"..msg.from.username.."\n"
 .."Name: "..msg.from.print_name.."\n"
