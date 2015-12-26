@@ -1,20 +1,22 @@
-function run(msg, matches)
-	local fuse = "#feedback\n\n"
-	.."Name: "..msg.from.print_name.."\n"
-	.."User: @"..msg.from.username.."\n"
-	.."ID: "..msg.from.id
-	.."\n==============================\n\n"..matches[1]
-	admin = "user#id147509695"
-	send_large_msg(admin, fuse, ok_cb, false)
-	return "پیام‌ شما با موفقیت ارسال شد"
+do local function run(msg, matches)
+	local message = '#feedback\n\n'
+	.."Name:  "..msg.from.print_name.."\n"
+	.."User:  @"..msg.from.username.."\n"
+	.."ID:  "..msg.from.id.."\n"
+	.."\n\n"..matches[1]
+	local userid = 'user#id147509695'
+	send_large_msg(userid, message)
+	return "پیام شما با موفقیت ارسال شد"
 end
 
 return {
-  description = "Feedback System",
-  usage = "!feedback (message) : send your feedback",
-  patterns = {
-    "^[!/]feedback (.*)$"
-  },
-  run = run
+	description = "Feedback System",
+	usage = {
+		"!feedback (message)",
+	},
+	patterns = {
+		"^[!/]feedback (.*)$",
+	},
+	run = run,
 }
 end
