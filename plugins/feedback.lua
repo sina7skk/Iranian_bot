@@ -1,8 +1,8 @@
-
-function run(msg, matches)
-
-local fuse = '#نظرات \n\n@username : ' .. msg.from.username .. '\n\nName : ' .. msg.from.print_name ..'\n\nLetters :\n\n\n' .. matches[1] 
-local fuses = '!printf user#id' .. msg.from.id
+local fuse = "#نظرات\n"
+.."Username: @"..msg.from.username.."\n"
+.."Name: "..msg.from.print_name.."\n"
+.."ID: "..msg.from.id.."\n\n"
+.."Letters :\n"..matches[1]
 
 
     local text = matches[1]
@@ -32,7 +32,7 @@ return {
 
   usage = "!feedback message",
   patterns = {
-    "^!/[Ff]eedback (.*)$"
+    "^[!/]feedback (.*)$"
 
   },
   run = run
