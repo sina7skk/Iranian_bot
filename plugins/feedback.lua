@@ -7,8 +7,7 @@ local fuse = "#نظرات\n"
 
     local text = matches[1]
  bannedidone = string.find(msg.from.id, '123')
-        bannedidtwo =string.find(msg.from.id, '465')       
-   bannedidthree =string.find(msg.from.id, '678')  
+        bannedidtwo =string.find(msg.from.id, '465')          bannedidthree =string.find(msg.from.id, '678')  
 
 
         print(msg.to.id)
