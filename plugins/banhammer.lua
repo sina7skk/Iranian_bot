@@ -1,4 +1,3 @@
-
 local function pre_process(msg)
   -- SERVICE MESSAGE
   if msg.action and msg.action.type then
