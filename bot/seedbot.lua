@@ -215,7 +215,7 @@ function create_config( )
     "owners",
     "arabic_lock",
     "set",
-    "antilink",
+    "Plugins",
     "get",
     "broadcast",
     "download_media",
