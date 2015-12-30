@@ -45,8 +45,8 @@ do
       '!join [invite_link] : Join into a group by providing their [invite_link].'
       },
     patterns = {
-      '^[!/]join$',
-      '^[!/]join (.*)$'
+      '^!join$',
+      '^!join (.*)$'
     },
     run = run
   }
