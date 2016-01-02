@@ -849,9 +849,6 @@ for k,v in pairs(data[tostring(msg.to.id)]['moderators']) do
     end
       
     if matches[1] == 'help' then
-      if not is_momod(msg) then
-        return
-      end
       savelog(msg.to.id, name_log.." ["..msg.from.id.."] Used /help")
       return help()
     end
