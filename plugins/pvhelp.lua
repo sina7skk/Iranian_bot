@@ -1,2 +1,78 @@
-do function run(msg, matches) return [[لیست‌ دستورات برای کنترل گروه ها از چت شخصی ربات‌↙ توجه:⛔دستور ها فقط برای اونور گروه و در چت شخصی ربات کاربرد دارد.⛔ برای کیک بن انبن فرد در چت خصوصی‌ ربات🔽 /owners [group_id] [kick،ban‌،unban] user_id مثال🔽 /owners 1234567 kick 1234567 ====================== برای پاک کردن‌ اعضا،قوانین،مدیرها و درباره گروه 🔽 /owners [group_id] clean [modlist،rules،about] مثال🔽 /owners 1234567 clean modlist ====================== برای تنظیم لیمیت اسپم در پیوی ربات🔽 /owners [group_id] setflood [لیمیت اسپم] مثال 🔽 /owners 1234567 setflood‌ 15 ====================== برای قفل عکس، نام در پیوی 🔽 /owners [group_id] lock [member‌، name] مثال🔽 /owners 1234567 lock member ====================== برای برداشتن قفل نام و اعضای گروه در پیوی ربات 🔽 /owner [group_id] unlock [member|name] مثال🔽 /owners 1234567 unlock name ====================== برای دریافت و گروه در پیوی🔽 /owners [group_id] get link مثال🔽 /owners 1234567 get link ====================== برای تغیر یا دریافت لینک‌ جدید گروه در پیوی ربات 🔽 /owners [group_id] new link مثال🔽 /owners 1234567 new link ====================== برای تغییر نام گروه در پیوی ربات 🔽 /changename [group_id] [name] مثال🔽 /changename 123456789 group ====================== برای تغیر قوانین گروه در پیوی ربات 🔽 /changrules [group_id] [rules] مثال🔽 /changrules 123456789 rules ! ====================== برای تغیر توضیحات گروه در پیوی ربات 🔽 /changeabout [group_id] [about] مثال🔽 /changeabout 123456789 about ! ====================== برای دریافت لاگ گروه در پیوی ربات🔽 /loggroup [group_id] مثال🔽 /loggroup 123456789 ====================== برای عضو شدن در گروه ها در صورت داشتن کد گروه، کد را ده بار در پیوی ربات به صورت زیر بفرستید.🔽 /join [group_id] مثال 🔽 /join 1234567 ====================== 🚫توجه🚫: تمامی دستورات علاوه بر / با ! هم کار میکنند. ====================== Made by @amir_sereen]] end return { description = "pvhelp", usage = {"لیست دستورات برای کار کردن در پی وی ربات برای مشاهده !pvhelp راز بزنید"}, patterns = {"^[!/](pv)"}, run = run }
+do
+function run(msg, matches)
+ return [[لیست‌ دستورات برای کنترل گروه ها از چت شخصی ربات‌↙
+توجه:⛔ دستور ها فقط برای اونور گروه و در چت شخصی ربات کاربرد دارد.⛔
+برای کیک بن انبن فرد در چت خصوصی‌ ربات🔽
+/owners [group_id] [kick،ban‌،unban] user_id
+مثال🔽
+/owners 1234567 kick 1234567
+======================
+برای پاک کردن‌ اعضا،قوانین،مدیرها و درباره گروه 🔽
+/owners [group_id] clean [modlist،rules،about]
+مثال🔽
+/owners 1234567 clean modlist
+======================
+برای تنظیم لیمیت اسپم در پیوی ربات🔽
+/owners [group_id] setflood [لیمیت اسپم]
+مثال 🔽
+/owners 1234567 setflood‌ 15
+
+======================
+برای قفل عکس، نام در پیوی 🔽
+/owners [group_id] lock [member‌، name]
+مثال🔽
+/owners 1234567 lock member
+======================
+برای برداشتن قفل نام و اعضای گروه در پیوی ربات 🔽
+/owner [group_id] unlock [member|name]
+مثال🔽
+/owners 1234567 unlock name
+======================
+برای دریافت و گروه در پیوی🔽
+/owners [group_id] get link
+مثال🔽
+/owners 1234567 get link
+======================
+برای تغیر یا دریافت لینک‌ جدید گروه در پیوی ربات 🔽
+/owners [group_id] new link
+مثال🔽
+/owners 1234567 new link
+======================
+برای تغییر نام گروه در پیوی ربات 🔽
+/changename [group_id] [name]
+مثال🔽
+/changename 123456789 group
+======================
+برای تغیر قوانین گروه در پیوی ربات 🔽
+/changrules [group_id] [rules]
+مثال🔽
+/changrules 123456789 rules !
+======================
+برای تغیر توضیحات گروه در پیوی ربات 🔽
+/changeabout [group_id] [about]
+مثال🔽
+/changeabout 123456789 about !
+======================
+برای  دریافت لاگ گروه در پیوی ربات🔽
+/loggroup [group_id]
+مثال🔽
+/loggroup 123456789
+======================
+برای عضو شدن در گروه ها در صورت داشتن کد گروه، کد را ده بار در پیوی ربات به صورت زیر بفرستید.🔽
+/join [group_id]
+مثال 🔽
+/join 1234567
+======================
+🚫توجه🚫: تمامی دستورات علاوه بر / با ! هم کار میکنند.
+======================
+Made by @amir_sereen
+]]
+end
+
+return {
+  description = "pvhelp", 
+  usage = {"لیست دستورات برای کار کردن در پی وی ربات برای مشاهده !pvhelp راز بزنید"},
+  patterns = {"^[!/](pvhelp)"}, 
+   run = run 
+}
 end
