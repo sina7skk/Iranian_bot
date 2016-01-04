@@ -207,7 +207,7 @@ function create_config( )
     "onservice",
     "inrealm",
     "ingroup",
-    "Pvhelp",
+    "pvhelp",
     "inpm",
     "banhammer",
     "stats",
@@ -216,7 +216,7 @@ function create_config( )
     "arabic_lock",
     "set",
     "Plugins",
-    "Plugins",
+    "echo"
     "get",
     "broadcast",
     "download_media",
@@ -359,6 +359,10 @@ Our channels
 برای ارسال نظرات 🔽
 [!/]feedback [msg]
 ==========================
+برای تکرار حرف توسط ربات 🔽
+[!/]echo [msg]
+برای مثال 🔽
+[!/]‌echo salam
 برای ایجاد یک فایل 🔽
 [!/]echo [name] [format] [txt]
 برای مثال🔽
