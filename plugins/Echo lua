@@ -1,23 +1,25 @@
 local function run(msg, matches)
-  local text = matches[1]
-  local b = 1
-
-  while b ~= 0 do
-    text = text:trim()
-    text,b = text:gsub('^!+','')
-  end
-  local file = io.open("./data/echo"..msg.from.id..matches[2], "w")
+ local text = matches[2]
+ if matches[1] == "echo" then
+  return text
+ else
+  local file = io.open("./data/"..matches[1], "w")
   file:write(text)
   file:flush()
   file:close()
-  send_document("chat#id"..msg.to.id,"./data/echo"..msg.from.id..matches[2], ok_cb, false)
+  return send_document("chat#id"..msg.to.id,"./data/"..matches[1], ok_cb, false)
+ end
 end
 
 return {
-  description = "Simplest plugin ever!",
-  usage = "!echo [whatever]: echoes the msg",
-  patterns = {
-    "^[!/](echo) +(.+) (.*)$"
-  },
-  run = run
+ description = "Simplest plugin ever!",
+ usage = {
+  "!echo [text] : return text",
+  "!echo> [ext] [text] : save text to file",
+ },
+ patterns = {
+  "^[!/](echo) (.*)$",
+  "^[!/]echo> ([^%s]+) (.*)$",
+ },
+ run = run
 }
